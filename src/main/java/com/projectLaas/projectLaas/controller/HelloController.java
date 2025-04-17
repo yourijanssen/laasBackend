@@ -35,7 +35,7 @@ public class HelloController {
        * @param id the ID of the hello message to retrieve
        * @return a HelloDTO containing the hello message
        */
-      @PreAuthorize("hasAnyRole('TRAINER', 'TRAINEE')")
+      // @PreAuthorize("hasAnyRole('TRAINER', 'TRAINEE')")
       @GetMapping("/hello/{id}")
       public HelloDTO sayHello(@PathVariable Long id) {
             return helloService.getHelloMessage(id);
