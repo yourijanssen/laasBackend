@@ -36,8 +36,9 @@ public class SecurityConfig {
                         .csrf(csrf -> csrf.disable())
                         .cors(withDefaults())
                         .authorizeHttpRequests(auth -> auth
-                                    .requestMatchers("/api/accounts/login", "/api/accounts/create").permitAll()
-                                    .requestMatchers("/**").authenticated()
+                                    .requestMatchers("/api/accounts/login", "/api/accounts/create", "/hello")
+                                    .permitAll()
+                                    .requestMatchers("/api/**").authenticated()
                                     .anyRequest().permitAll())
                         .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                         .httpBasic(withDefaults());
