@@ -1,17 +1,16 @@
-server:
-  port: 8080
-
-
-
 spring:
+  datasource:
+    url: jdbc:sqlserver://projectlaas.database.windows.net:1433;database=projectlaas;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: Admin123! 
+    password: Youri123!
+
   jpa:
-    database: POSTGRESQL
-    show-sql: false
     hibernate:
       ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
 
-  datasource:
-    url: jdbc:postgresql://localhost:5432/projectLaas
-    username: postgres
-    password: kees123
-    driver-class-name: org.postgresql.Driver
+    server:
+      port: 9090
