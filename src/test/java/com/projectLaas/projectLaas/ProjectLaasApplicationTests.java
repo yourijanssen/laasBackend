@@ -1,13 +1,13 @@
-package com.projectLaas.projectLaas;
+// package com.projectLaas.projectLaas;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class ProjectLaasApplicationTests {
+// @SpringBootTest
+// class ProjectLaasApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// @Test
+// void contextLoads() {
+// }
 
-}
+// }

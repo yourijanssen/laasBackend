@@ -1,3 +1,5 @@
+# Azure DB
+
 spring:
   datasource:
     url: jdbc:sqlserver://sqlserverprojectlaas.database.windows.net:1433;database=SQLDatabaseProjectLaas;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
