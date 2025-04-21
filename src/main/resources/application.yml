@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://sqlserverprojectlaas.database.windows.net:1433;database=SQLDatabaseProjectLaas;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: Admin123 
+    password: Working123!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+
+    server:
+      port: 9090
